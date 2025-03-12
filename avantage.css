@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.totalePage{
+    background-color: rgb(240, 230, 230);
+}
+
+svg{
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin-top: 10px;
+}
+
+svg:hover{
+    color: rgba(252, 234, 131, 0.973);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    padding: 30px;
+}
+
+.navbar:hover{
+   opacity: 0.8;
+}
+
+label {
+    position: relative;
+  }
+  
+  label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  }
+  
+  input {
+    padding: 10px 30px;
+  }
+
+h1{
+    font-family: "Roboto";
+    font-size: 50px;
+    color: white;
+}
+
+h1:hover{
+    color: rgba(252, 234, 131, 0.973);
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Roboto";
+    font-size: large;
+    gap: 20px;
+}
+
+.btnBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.action{
+    background-color: white;
+    font-size: 13px;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+input{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.entre{
+    background-color:  rgba(252, 234, 131, 0.973) ;
+    font-size: 13px;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.memupp{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu{
+  color: white; 
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.menu:hover{
+    color: rgba(252, 234, 131, 0.973) ;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu a:hover{
+    color: rgba(252, 234, 131, 0.973) ;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+img{
+    background-image: cover;
+    width: 100%;
+}
+
+.mainTotale{
+    border: solid;
+    margin: 30px;
+    padding: 20px;
+}
+
+.imgMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 1500px;
+    border: solid;
+    margin: 20px;
+    background-color: rgb(218, 213, 213);
+}
+
+.imgMain:hover{
+    background-color: rgb(8, 8, 8);
+}
+
+.MainEnTete1 h1{
+    color: black;
+    cursor: pointer;
+}
+
+.MainEnTete1 h1:hover{
+    color:rgba(209, 180, 18, 0.973) ;
+}
+
+.MainEnTete2{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenuMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.h1Caracteristique h1{
+    color: black;
+    cursor: pointer;
+}
+
+.h1Caracteristique h1:hover{
+    color: rgba(209, 180, 18, 0.973);
+}
+
+.h1Action h1{
+    color: black;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.h1Action h1:hover{
+    color: rgba(209, 180, 18, 0.973);
+}
+
+
+.piedPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:black;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.piedPage:hover{
+    color:rgba(252, 234, 131, 0.973) ;
+}
+
+.piedPage2{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: solid 1px white;
+    box-shadow: 0px 0px 5px 5px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.piedPage2:hover{
+    color: rgba(252, 234, 131, 0.973);
+}
