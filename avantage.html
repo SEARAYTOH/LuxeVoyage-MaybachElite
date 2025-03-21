@@ -1,95 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="avantage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LuxeVoyage - Prestige Automobile</title>
+    <link rel="stylesheet" href="avantage.css">
+    <script defer src="avantage.js"></script>
 </head>
 <body class="totalePage">
-
+    
     <header class="enTete">
-
         <div class="navbar">
-            <h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-front"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+            <h1 class="h1Navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-front">
+                    <path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/>
+                    <path d="M7 14h.01"/><path d="M17 14h.01"/>
+                    <rect width="18" height="8" x="3" y="10" rx="2"/>
+                    <path d="M5 18v2"/><path d="M19 18v2"/>
+                </svg>
                 LuxeVoyage
             </h1>
-
             <label>
-            <input type="search">
+                <input type="search" placeholder="Rechercher...">
             </label>
-            
             <nav>
                 <div class="btnBox">
                     <button class="action">Connexion</button>
                     <button class="entre">Inscription</button>
-                  </div>
-
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                </div>
                 <div class="menu">
-
                     <ul>
-                        <a href="index.html">Acceuil</a>
-                        <a href="avantage.html">Avantages du Produit</a>
+                        <a href="index.html">Accueil</a>
+                        <a href="avantage.html">Avantages du produit</a>
                         <a href="contact.html">Contact</a>
                     </ul>
-
                 </div>
-
             </nav>
-    </div>
-
-
+        </div>
     </header>
 
-       <div class="img1"><img src="MAYBACH2023.webp" alt=""></div>
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1 class="hero-text">Découvrez l’Excellence avec LuxeVoyage</h1>
+        <h2 class="sub-text">Vente et Location de Véhicules de Luxe – Conduisez l’Exceptionnel</h2>
+    </section>
 
     <main class="mainTotale">
-         <div class="MainEnTete1">
-            <h1><br><u>🌟 Maybach 2023 – Le Sommet du Luxe et de la Performance 🌟</u></h1>
-         </div>
-
-         <div class="MainEnTete2">
-             <div class="imgMain"><img src="MAYBACH2023.webp" alt=""></div> 
-
-             <div class="contenuMain">
-             <div class="premierh2MainEnTete2"><h2>🌟 Chez <u>LuxeVoyage</u>, nous vous offrons bien plus qu’un simple véhicule : nous vous proposons une expérience inégalée de prestige et d’élégance. Découvrez la Mercedes-Maybach 2023, un chef-d’œuvre d’ingénierie conçu pour les amateurs de raffinement absolu.</h2></div> 
-         
-             <h2><br>🌟 La Maybach 2023 est l’incarnation parfaite du luxe, combinant design sophistiqué, technologie avancée et performances époustouflantes. Son allure majestueuse, ses finitions prestigieuses et son intérieur somptueux font d’elle bien plus qu’un simple moyen de transport : c’est un symbole de réussite.</h2>
-
-             <div class="h1Caracteristique"><h1><br><u>🔥 Caractéristiques du véhicules 🔥</u></h1></div>
-
-             <h2><br>✅ Design Élégant & Imposant : Une silhouette iconique, une calandre chromée scintillante et des détails sur mesure.</h2>
-
-             <h2><br>✅ Un Intérieur digne d’un Palais 🏰 : Sièges en cuir Nappa avec fonction massage, accoudoirs chauffants et un espace arrière ultra-spacieux.</h2>
-
-             <h2><br>✅ Technologie de Pointe 🎛️ : Interface MBUX, double écran OLED, système audio Burmester 4D et conduite semi-autonome.</h2>
-
-             <h2><br>✅ Puissance & Confort Absolu ⚡ : Moteur V8 biturbo ou V12, suspension pneumatique et une insonorisation parfaite pour une conduite fluide et silencieuse.</h2>
-
-             <div class="h1Action"><h1><u>🚀 Passez à l’Action ! 🚀</u></h1></div>
-
-             <h2><br>Vivez l’expérience Maybach avec <u>LuxeVoyage</u> et entrez dans un univers où le luxe et l’exclusivité sont la norme. Contactez-nous dès aujourd’hui pour un essai VIP et laissez-vous séduire par la Maybach 2023.</h2>
-            </div>
-
-         </div>
-
-    </main>
-
-    <footer>
-
-        <div class="partieFooter">
-            <br><h2 class="piedPage">📍 Contactez-nous dès aujourd’hui et laissez-vous tenter par l’expérience du luxe !</h2>
-         </div>
- 
-        <div class="piedPage2">
-            <br><h2>📞 07 48 16 44 39</h2>
-            <br><h2>📧 LuxeVoyage@gmail.com</h2>
-            <br><h2>📍 Abidjan Cocody</h2>
+        <div class="MainEnTete1">
+            <h1 class="deroulant"><br>🌟 Maybach 2023 – Le Sommet du Luxe et de la Performance 🌟</h1>
         </div>
 
+        <img src="mercedes-maybach-haute-voiture-i15-1680.jpg" alt="">
+        <div class="MainEnTete2">
+
+            <div class="contenuMain">
+
+                <h2>🌟 Chez <u>LuxeVoyage</u>, nous vous offrons bien plus qu’un simple véhicule : nous vous proposons une expérience inégalée de prestige et d’élégance.</h2>
+                <h2><br>🌟 La Maybach 2023 est l’incarnation parfaite du luxe, combinant design sophistiqué, technologie avancée et performances époustouflantes.</h2>
+            </div>
+
+            <div class="caracteristique">
+                <h1><br>🔥 Caractéristiques du véhicule 🔥</h1>
+                <img src="5f4faedba8777320_17.jpg" alt="">
+                <h2>✅ Design Élégant & Imposant</h2>
+                <h2>✅ Intérieur digne d’un Palais 🏰</h2>
+                <h2>✅ Technologie de Pointe 🎛️</h2>
+                <h2>✅ Puissance & Confort Absolu ⚡</h2>
+            </div>
+
+            <div class="passezAction">
+                <h1>🚀 Passez à l’Action ! 🚀</h1>
+                <h2>Plongez dans un univers où l’élégance et la performance se rencontrent pour vous offrir une expérience de conduite inégalée. Chez LuxeVoyage Maybach, chaque détail est pensé pour répondre aux exigences des passionnés de prestige et de raffinement.
+                    <br>Laissez-vous séduire par le summum du luxe et faites de chaque trajet un moment d’exception.
+                </h2>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="partieFooter">
+           <br><h2 class="piedPage">📍 Contactez-nous dès aujourd’hui et laissez-vous tenter par l’expérience du luxe !</h2>
+        </div>
+
+        <div class="piedPage2">
+           <br><h2 class="tel">📞 07 48 16 44 39</h2>
+           <br><h2 class="email">📧 LuxeVoyage@gmail.com</h2>
+           <br><h2 class="adresse">📍 Abidjan Cocody</h2>
+        </div>
     </footer>
-    
     <script src="avantage.js"></script>
 </body>
 </html>

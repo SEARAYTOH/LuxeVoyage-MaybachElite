@@ -1,247 +1,316 @@
+/* Styles de base */
 *{
-    margin: 0;
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
-}
-
-.totalePage{
-    background-color: rgb(240, 230, 230);
-}
-
-.navbar svg{
-    width: 100px;
-    height: 100px;
-    color: white;
-    margin-top: 10px;
-}
-
-.navbar svg:hover{
-    color: rgba(252, 234, 131, 0.973);
-}
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color:black;
-    padding: 30px;
-}
-
-.navbar:hover{
-   opacity: 0.8;
-}
-
-label {
-    position: relative;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      overflow-x: hidden;
+      margin-top: 60px;
+      background-color: #333;
+  }
+  
+  .navbar {
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      position: fixed;
+      z-index: 1000 ;
+      width: 100%;
+      padding: 15px;
+  
+  }
+  
+  .navbar svg {
+      width: 100px;
+      height: 50px;
+      color: white;
+      margin-top: 10px;
+  }
+  
+  .navbar svg:hover {
+      color: rgba(252, 234, 131, 0.973);
+  }
+  
+  .navbar h1 {
+      display: flex;
+      flex-direction: row;
+      font-family: "Roboto";
+      font-size: 50px;
+      color: white;
+  }
+  
+  .navbar h1:hover {
+      color: rgba(252, 234, 131, 0.973);
+  }
+  
+  label {
+      position: relative;
   }
   
   label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
   }
   
   input {
-    padding: 10px 30px;
+      padding: 10px 30px;
+      width: 500px;
+      height: 50px;
+      border-radius: 20px;
   }
-
-.navbar h1{
-    font-family: "Roboto";
-    font-size: 50px;
-    color: white;
-}
-
-.navbar h1:hover{
-    color: rgba(252, 234, 131, 0.973);
-}
-
-.menu a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
-    font-family: "Roboto";
-    font-size: large;
-    gap: 20px;
-}
-
-.btnBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-top: 20px;
-    gap: 10px;
-
-}
-
-.action{
-    background-color: white;
-    font-size: 13px;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-input{
-    width: 500px;
-    height: 50px;
-    border-radius: 20px;
-}
-
-.entre{
-    background-color:  rgba(252, 234, 131, 0.973) ;
-    font-size: 13px;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.memupp{
-    display: flex;
-    flex-direction: row;
-
-}
-
-.menu{
-  color: white; 
-  margin-bottom: 10px;
-  display: flex;
-  gap: 20px;
   
+  .menu {
+      display: flex;
+      gap: 20px;
+      color: white;
+      margin-right: 30px;
+      margin-top: 10px;
+  }
+  
+  .menu ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+  
+  .menu a {
+      color: white;
+      text-decoration: none;
+      gap: 20px;
+  }
+  
+  .menu a:hover {
+      color: rgba(252, 234, 131, 0.973);
+      cursor: pointer;
+  }
+  
+  .btnBox {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+  }
+  
+  .action, .entre {
+      font-size: 13px;
+      width: 70px;
+      height: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  .action {
+      background-color: white;
+  }
+  
+  .entre {
+      background-color: rgba(252, 234, 131, 0.973);
+  }
+  
+
+/* Animation pour le texte */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.menu:hover{
-    color: rgba(252, 234, 131, 0.973) ;
+/* Appliquer l'effet d'apparition progressive */
+.mainTotale h1, .contenuMain h2 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
-.menu a{
-    color: white;
+/* Effet de zoom au survol des images */
+img {
+    transition: transform 2s ease-in-out;
 }
 
-.menu a:hover{
-    color: rgba(252, 234, 131, 0.973) ;
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation du menu mobile */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg);
+}
+
+/* Animation des sections au scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation du défilement horizontal */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 
 img{
-    background-image: cover;
     width: 100%;
+    height: 1000px;
+    max-height: auto; 
+    object-fit: auto;
+    margin-top: 50px; 
 }
 
-.menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+
+/* Partie principale */
+
+.partieMain1 {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: white; /* Fond noir pour plus de contraste */
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px;
 }
 
-.decouverte{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+.hidden {
+    top: -100px; /* Fait disparaître la section en haut */
+}
+
+.partieMain1:hover{
+    background-color: rgb(162, 110, 14);
     color: black;
 }
 
+.decouverte {
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    animation: scrollText 10s linear infinite;
+}
+
 .presentation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    color: rgb(72, 67, 59);
+    font-size: 24px;
+    font-weight: bold;
+    animation: scrollText 10s linear infinite;
 }
 
-.partieMain{
-    background-color:rgb(211, 205, 205) ;
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.partieMain2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow:  0px 0px 5px 5px ;
-    border: solid;
-    border-radius: 10px;
-    margin: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.partieMain2, .partieMain3, .partieMain4 {
+    padding: 20px;
+    text-align: center;
 }
 
-.partieMain3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.maybachPartieMain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 33%;
-    width: 500px;
-    border: solid;
-}
-
-.maybachPartieMain:hover{
-    transform: scale(1.2);
-    transition: 2s;
-}
-
-.vente{
-    font-family: "Roboto";
-    font-size: 50px;
-}
-
-.vente:hover{
-    color: rgba(252, 234, 131, 0.973);
+.partieMain1 h1 {
+    font-size: 40px;
 }
 
 .location{
-    font-family: "Roboto";
-    font-size: 50px;
+    border: solid;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .location:hover{
-    color: rgba(252, 234, 131, 0.973);
+    background-color: rgb(162, 110, 14);
+    color: black;
 }
 
-.partieMain4{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.vente{
+    border: solid;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.partieMain5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.vente:hover{
+    background-color:rgb(162, 110, 14) ;
+    color: black;
 }
 
+.partieMain1 h2 {
+    font-size: 24px;
+}
+
+.partieMainDeuxieme {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+}
+
+.partieMain2, .maybachPartieMain, .partieMain3, .partieMain4 {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
 .partieFooter{
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: x-large;
     color: white;
 }
@@ -255,11 +324,46 @@ img{
     background-color: black;
     height: 100px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .piedPage:hover{
     color:rgba(252, 234, 131, 0.973) ;
+}
+
+.tel{
+    cursor: pointer;
+}
+
+
+.tel:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
+
+}
+
+.email{
+    cursor: pointer;
+}
+
+.email:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
+}
+
+.adresse{
+    cursor: pointer;
+}
+
+.adresse:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
 }
 
 .piedPage2{
@@ -273,8 +377,8 @@ img{
     border: solid 1px white;
     box-shadow: 0px 0px 5px 5px;
     height: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .piedPage2:hover{
@@ -285,3 +389,104 @@ img{
     display: flex;
     flex-direction: column;
 }
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .navbar input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .btnBox {
+        justify-content: center;
+    }
+
+    .partieMain1 h1 {
+        font-size: 24px;
+    }
+
+    .partieMain1 h2 {
+        font-size: 18px;
+    }
+
+    .partieMainDeuxieme {
+        grid-template-columns: 1fr;
+    }
+
+    .partieMain2, .maybachPartieMain, .partieMain3, .partieMain4 {
+        padding: 15px;
+    }
+
+    .partieMain2 h1, .partieMain3 h1, .partieMain4 h1 {
+        font-size: 20px;
+    }
+
+    .partieMain2 h2, .partieMain3 h2, .partieMain4 h2 {
+        font-size: 16px;
+    }
+
+    .piedPage, .piedPage2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .piedPage h2, .piedPage2 h2 {
+        font-size: 16px;
+    }
+} 
+
+@media (max-width: 480px) {
+    .form-section {
+        padding: 15px;
+    }
+
+    .form-section label {
+        font-size: 14px;
+    }
+
+    .form-section input {
+        font-size: 14px;
+    }
+
+    button.commander {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+.partieFooter {
+    font-size: 1.2em;
+}
+
+.piedPage2 h2 {
+    font-size: 1em;
+    padding: 8px;
+}
+

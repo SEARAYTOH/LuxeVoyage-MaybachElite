@@ -1,234 +1,242 @@
+/* Styles de base */
 *{
-    margin: 0;
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
-}
-
-.totalePage{
-    background-color: rgb(240, 230, 230);
-}
-
-.navbar svg{
-    width: 100px;
-    height: 100px;
-    color: white;
-    margin-top: 10px;
-}
-
-.navbar svg:hover{
-    color: rgba(252, 234, 131, 0.973);
-}
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color:black;
-    padding: 30px;
-}
-
-.navbar:hover{
-   opacity: 0.8;
-}
-
-.navbar label {
-    position: relative;
   }
   
-.navbar label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-}
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      overflow-x: hidden;
+      margin-top: 60px;
+  }
   
-  input {
-    padding: 10px 30px;
+  .navbar {
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      position: fixed;
+      z-index: 1000 ;
+      width: 100%;
+      padding: 15px;
+  
+  }
+  
+  .navbar svg {
+      width: 100px;
+      height: 50px;
+      color: white;
+      margin-top: 10px;
+  }
+  
+  .navbar svg:hover {
+      color: rgba(252, 234, 131, 0.973);
+  }
+  
+  .navbar h1 {
+      display: flex;
+      flex-direction: row;
+      font-family: "Roboto";
+      font-size: 50px;
+      color: white;
+  }
+  
+  .navbar h1:hover {
+      color: rgba(252, 234, 131, 0.973);
+  }
+  
+  .navbar label {
+      position: relative;
+  }
+  
+  .navbar label:before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  }
+  
+  .navbar input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 30px;
+      width: 500px;
+      height: 50px;
+      border-radius: 20px;
+
   }
 
-.navbar h1{
-    font-family: "Roboto";
-    font-size: 50px;
-    color: white;
-}
+  .rechercherNavbar{
+    font-size: small;
+    padding-top: 15px;
+  }
 
-.navbar h1:hover{
-    color: rgba(252, 234, 131, 0.973);
-}
-
-.menu a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
-    font-family: "Roboto";
-    font-size: large;
-    gap: 20px;
-}
-
-.btnBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-top: 20px;
-    gap: 10px;
-
-}
-
-.action{
-    background-color: white;
-    font-size: 13px;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-input{
-    width: 500px;
-    height: 50px;
-    border-radius: 20px;
-}
-
-.entre{
-    background-color:  rgba(252, 234, 131, 0.973) ;
-    font-size: 13px;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.memupp{
-    display: flex;
-    flex-direction: row;
-
-}
-
-.menu{
-  color: white; 
-  margin-bottom: 10px;
-  display: flex;
-  gap: 20px;
+  .navbar .menu {
+      display: flex;
+      gap: 20px;
+      color: white;
+      margin-right: 30px;
+      margin-top: 10px;
+  }
   
-}
+  .menu ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+  
+  .menu a {
+      color: white;
+      text-decoration: none;
+      gap: 20px;
+  }
+  
+  .menu a:hover {
+      color: rgba(252, 234, 131, 0.973);
+      cursor: pointer;
+  }
+  
+  .btnBox {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+  }
+  
+  .action, .entre {
+      font-size: 13px;
+      width: 70px;
+      height: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  .action {
+      background-color: white;
+  }
+  
+  .entre {
+      background-color: rgba(252, 234, 131, 0.973);
+  }
 
-.menu:hover{
-    color: rgba(252, 234, 131, 0.973) ;
-}
-
-.menu a{
-    color: white;
-}
-
-.menu a:hover{
-    color: rgba(252, 234, 131, 0.973) ;
-}
-
-img{
-    background-image: cover;
+  img{
     width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("8-1623343947.jpg");
+  }
+
+  /* Image de fond avec animation */
+.mainPartie {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomIn 10s infinite alternate ease-in-out;
 }
 
-.formulaire{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto";
-    font-size: 50px;
-    color: black;
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Formulaire de commande */
+.form-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+}
+
+.form-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button.commander {
+    background: #f4a261;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
     cursor: pointer;
-
+    transition: background 0.3s;
 }
 
-.formulaire:hover{
-    color: rgba(252, 234, 131, 0.973);
+button.commander:hover {
+    background: #e76f51;
+}
+
+/* Message de succès */
+.success-message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Footer */
+.partieFooter{
     background-color: black;
-}
-
-label:hover{
-    color: rgba(252, 234, 131, 0.973);
-    background-color: black;
-}
-
-.mainPartie{
-    border: solid;
-    border-radius: 20px;
-    margin: 50px;
-    padding: 20px;
-}
-
-label{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: x-large;
-    cursor: pointer;
+    color: white;
 }
 
-label:hover{
-   background-color: black ;
-   color:rgba(252, 234, 131, 0.973)
-}
-
-.mainPartie input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-    width: 95%;
-    height: 50px;
-    margin-left: 32px;
-    border-radius: 25px;
-    background-color: white;
-}
-
-.Commander{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    margin-left: 25%;
-    width: 50%;
-    margin-bottom: 10px;
-    cursor: pointer;
-    background-color:rgb(141, 95, 95) ;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.Commander:hover{
-    background-color: rgba(252, 234, 131, 0.973);
-}
-
-.conditions{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: xx-large;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.inputConditions{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.piedPage{
+.piedPage {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -237,11 +245,46 @@ label:hover{
     background-color: black;
     height: 100px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .piedPage:hover{
-    color: rgba(252, 234, 131, 0.973);
+    color:rgba(252, 234, 131, 0.973) ;
+}
+
+.tel{
+    cursor: pointer;
+}
+
+
+.tel:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
+
+}
+
+.email{
+    cursor: pointer;
+}
+
+.email:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
+}
+
+.adresse{
+    cursor: pointer;
+}
+
+.adresse:hover{
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(162, 110, 14);
+    color: black;
 }
 
 .piedPage2{
@@ -255,10 +298,165 @@ label:hover{
     border: solid 1px white;
     box-shadow: 0px 0px 5px 5px;
     height: 100px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .piedPage2:hover{
     color: rgba(252, 234, 131, 0.973);
 }
+
+.inputConditions{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Animation pour le texte */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'effet d'apparition progressive */
+.mainPartie{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Effet de zoom au survol des images */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation du menu mobile */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg);
+}
+
+/* Animation des sections au scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation du défilement horizontal */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .navbar input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .btnBox {
+        justify-content: center;
+    }
+
+    .hero-text, .sub-text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .background-image {
+        height: 100%;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .piedPage2 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+  
+        @media (max-width: 480px) {
+            .form-section {
+                padding: 15px;
+            }
+        
+            .form-section label {
+                font-size: 14px;
+            }
+        
+            .form-section input {
+                font-size: 14px;
+            }
+        
+            button.commander {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+        .partieFooter {
+            font-size: 1.2em;
+        }
+    
+        .piedPage2 h2 {
+            font-size: 1em;
+            padding: 8px;
+        }
+     
+    
